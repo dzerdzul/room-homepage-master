@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+
+    <title>Frontend Mentor | Room homepage</title>
+
+</head>
+<body>
+<h1 class="sr-only">Room Homepage</h1>
+<header class="header">
+    <div class="header__content">
+        <button type="button" class="header__button" aria-label="menu" aria-expanded="false"
+                aria-controls="main-navigation"></button>
+        <a class="header__logo link" href="#">
+            <img class="logo" src="images/logo.svg" alt="room home">
+        </a>
+        <nav id="main-navigation" class="header__navigation navigation" aria-label="main menu" data-visible="false">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a class="link navigation__link" href="#" aria-current="page">Home</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="link navigation__link" href="#">Shop</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="link navigation__link" href="#">About</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="link navigation__link" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <section class="header__slider" aria-label="slider with product's description">
+        <div class="swiper-container">
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="image-wrapper">
+                            <picture>
+                                <source srcset="images/mobile-image-hero-1.jpg" height="360" media="(width <= 500px)"/>
+                                <img class="image" alt="example style of property" src="images/desktop-image-hero-1.jpg"
+                                     height="534" width="840"/>
+                            </picture>
+                        </div>
+                        <div class="description">
+                            <h2 class="title">Discover innovative ways to decorate</h2>
+                            <p class="text">
+                                We provide unmatched quality, comfort, and style for property owners across the country.
+                                Our experts combine form and function in bringing your vision to life. Create a room in
+                                your
+                                own style with our collection and make your property a reflection of you and what you
+                                love.
+                            </p>
+                            <a class="link link_theme_shop">Shop now
+                                <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                                          fill="#000" fill-rule="nonzero"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-wrapper">
+                            <picture>
+                                <source srcset="images/mobile-image-hero-2.jpg" height="360" media="(width <= 500px)"/>
+                                <img class="image" alt="example of furniture" src="images/desktop-image-hero-2.jpg"
+                                     height="534" width="840"/>
+                            </picture>
+                        </div>
+                        <div class="description">
+                            <h2 class="title">We are available all across the globe</h2>
+                            <p class="text">
+                                With stores all over the world, it's easy for you to find furniture for your home or
+                                place of business.
+                                Locally, we’re in most major cities throughout the country. Find the branch nearest you
+                                using our
+                                store locator. Any questions? Don't hesitate to contact us today.
+                            </p>
+                            <a class="link link_theme_shop">Shop now
+                                <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                                          fill="#000" fill-rule="nonzero"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-wrapper">
+                            <picture>
+                                <source srcset="images/mobile-image-hero-3.jpg" height="360" media="(width <= 500px)"/>
+                                <img class="image" alt="example of quality" src="images/desktop-image-hero-3.jpg"
+                                     height="534" width="840"/>
+                            </picture>
+                        </div>
+                        <div class="description">
+                            <h2 class="title">Manufactured with the best materials</h2>
+                            <p class="text">
+                                Our modern furniture store provide a high level of quality. Our company has invested in
+                                advanced technology
+                                to ensure that every product is made as perfect and as consistent as possible. With
+                                three decades of
+                                experience in this industry, we understand what customers want for their home and
+                                office.
+                            </p>
+                            <a class="link link_theme_shop">Shop now
+                                <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                                          fill="#000" fill-rule="nonzero"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="mySwiper2-prev"></button>
+            <button type="button" class="mySwiper2-next"></button>
+        </div>
+    </section>
+</header>
+<main class="main">
+    <div class="image-wrapper main__image-left">
+        <img class="image" alt="example of design room" src="images/image-about-dark.jpg" height="266"
+             width="420"/>
+    </div>
+    <div class="main__content">
+        <h3 class="main__title">
+            About our furniture
+        </h3>
+        <p class="text text_margin_reset">
+            Our multifunctional collection blends design and function to suit your individual taste.
+            Make each room unique, or pick a cohesive theme that best express your interests and what
+            inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+            or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+    </div>
+    <div class="image-wrapper main__image-right">
+        <img class="image" alt="example of chair" src="images/image-about-light.jpg" height="266" width="440"/>
+    </div>
+</main>
+</body>
+</html>
